@@ -7,7 +7,7 @@ job('First-Maven-Project-Via-DSL') {
         scm('* * * * *')
     }
     steps {
-        maven('clean install', 'maven-samples/single-module/pom.xml')
+        maven('package install', 'maven-samples/single-module/pom.xml')
     }
     publishers {
         //archive the war file generated
